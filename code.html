@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guitar Legends Main Menu</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&amp;family=Press+Start+2P&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+        :root {
+            --background-dark: #120c1c;
+            --arcade-pink: #ff3c82;
+            --arcade-blue: #00e0ff;
+            --arcade-yellow: #faff00;
+            --arcade-green: #39ff14;
+        }
+        .text-shadow-arcade {
+            text-shadow: 3px 3px 0px var(--arcade-blue),
+                -3px -3px 0px var(--arcade-pink);
+        }
+        .button-shadow-arcade {
+             box-shadow: 0 0 10px var(--arcade-yellow), 0 0 20px var(--arcade-yellow), 0 0 30px var(--arcade-yellow);
+        }
+    </style>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "var(--arcade-pink)",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "var(--background-dark)",
+                        "arcade-pink": "var(--arcade-pink)",
+                        "arcade-blue": "var(--arcade-blue)",
+                        "arcade-yellow": "var(--arcade-yellow)",
+                        "arcade-green": "var(--arcade-green)",
+                    },
+                    fontFamily: {
+                        display: ["Bangers", "cursive"],
+                        pixel: ["'Press Start 2P'", "cursive"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "1rem",
+                        xl: "1.5rem",
+                        full: "9999px",
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="font-pixel bg-background-dark text-white">
+<div class="flex flex-col min-h-screen bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCq_HpNcHryXcGwUIRUheRFlYPV5fXKuOTAqaVSL9ruJ6l7WeGj6qZaUcfPEES-K80hYmEXcCHDsz9EHQlLsjA3Eq_klmpp5-CkzDrf_mocGpqF_TQ6u6LWPISECQRzyOnH-zXuXG09FnxpAV4camW-2WDToWoloPlV0IBeZXGWL-oMGbT6Mq2KsyKdwnvwY8CqLgCB_2Q_xJVt6dG5CzrPZO1enSuhYh-lQD3hRgP7i4PWSi_ruVCF8UtRPoc4nvZ2DXM08J2HFRX9')">
+<div class="flex-1 flex flex-col items-center justify-center p-4 sm:p-6 md:p-8 bg-black/50">
+<div class="w-full max-w-2xl mx-auto flex flex-col items-center gap-12">
+<h1 class="text-7xl md:text-8xl lg:text-9xl font-display text-arcade-yellow text-shadow-arcade tracking-widest">
+                    CHARANGO HERO
+                </h1>
+<div class="w-full max-w-md flex flex-col gap-5">
+<button class="w-full h-16 px-6 text-2xl font-display text-background-dark bg-arcade-yellow rounded-lg border-4 border-arcade-pink tracking-wider transition-all transform hover:scale-105 hover:bg-arcade-green hover:border-arcade-blue button-shadow-arcade">
+                        Nuevo Juego
+                    </button>
+<button class="w-full h-16 px-6 text-2xl font-display text-arcade-yellow bg-transparent border-4 border-arcade-yellow rounded-lg tracking-wider hover:bg-arcade-yellow/20 transition-all transform hover:scale-105">
+                        Cargar Juego
+                    </button>
+<button class="w-full h-16 px-6 text-2xl font-display text-arcade-yellow bg-transparent border-4 border-arcade-yellow rounded-lg tracking-wider hover:bg-arcade-yellow/20 transition-all transform hover:scale-105">
+                         Puntuaciones
+                    </button>
+<button class="w-full h-16 px-6 text-2xl font-display text-arcade-yellow bg-transparent border-4 border-arcade-yellow rounded-lg tracking-wider hover:bg-arcade-yellow/20 transition-all transform hover:scale-105">
+                        Configuracion
+                    </button>
+</div>
+</div>
+</div>
+<footer class="text-center py-4 text-sm text-gray-400">
+            © 2025  Charango Hero. todos los derechos reservados.
+        </footer>
+</div>
+
+</body></html>
